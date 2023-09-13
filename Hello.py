@@ -27,7 +27,7 @@ def generate_recommendation(model, user_id, ratings_df, movies_df, n_items):
     index_max = (-pred_ratings).argsort()[:n_items]
     for i in index_max:
         movie_id = movie_ids_to_pred[i]
-        print(df_movies[df_movies["movieId"]==movie_id]["title"].values[0], pred_ratings[i])
+        print(df_movies[df_movies["movieId"]==movie_ids]["title"].values[0], pred_ratings[i])
 
 # Charger le modèle hybride
 hybrid_model = joblib.load("svdpp_model.pkl")
