@@ -1,5 +1,9 @@
-altair
 numpy
-pandas
-pydeck
+pickle-mixin
 streamlit
+streamlit-option-menu
+scikit-learn
+
+scikit-surprise
+joblib
+plotly 
