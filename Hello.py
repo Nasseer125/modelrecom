@@ -4,9 +4,9 @@ import streamlit as st
 import joblib
 
 # Chargement des données (contenant les noms des films, les identifiants de films et les genres)
-data = pd.read_csv('df_merge.csv',nrow=50)
-df_ratings = pd.read_csv('df_ratings.csv',nrow=50)
-df_movies = pd.read_csv('df_movies.csv',nrow=50)
+data = pd.read_csv('df_merge.csv',nrows=50)
+df_ratings = pd.read_csv('df_ratings.csv',nrows=50)
+df_movies = pd.read_csv('df_movies.csv',nrows=50)
 
 def generate_recommendation(model, user_id, ratings_df, movies_df, n_items):
     # Obtenez une liste de tous les identifiants de films à partir de l'ensemble de données
